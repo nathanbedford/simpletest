@@ -13,6 +13,11 @@ namespace SimpleTest.Modules
                 return View["index"];
             };
 
+            Get["/loaderio-1fe0a92fa02d5933569d50dcdb1adf4d.txt"] = parameters =>
+            {
+                return "loaderio-1fe0a92fa02d5933569d50dcdb1adf4d";
+            };
+
             Get["/api/loadtest"] = parameters =>
             {
                 var test = new SimpleObject()
